@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /*body {
+                background-color: currentColor;
+            }*/
+            h1 {
+                text-align: center;
+                color: red;
+                background-color:floralwhite
+            }
+            #big_div {
+                border: 1px solid black;                
+            }
+            .sub_div {
+                background-color:azure;
+            }
+            #star,sup {
+                color: red;
+            }
+            input {
+                background-color:aliceblue;
+            }
+            #blue {
+                color:blue;
+            }
+            #rightside {
+                text-align: right;
+                margin-right: auto;
+            }
+        </style>
+        <title>IRCTC Registration</title>
+    </head>
+    <body>
+        <h1><marquee>Welcome to IRCTC</marquee></h1>
+        <form>
+        <div id="big_div">
+            <div style="background-color:aliceblue"><label>Individual Registration</label></div>
+            <div>
+                <label id="star"><sup>*</sup>mandatory.</label> <br>
+            </div>
+            <div class="sub_div">
+                GARBAGE/JUNK VALUES IN PROFILE MAY LEAD TO DEACTIVATION <br>
+                Please use a valid E-Mail ID and mobile number in registration.
+            </div>
+            <br>
+            <table>
+                <tr>                    
+                    <td>User ID<sup>*</sup></td>
+                    <td><input type="text" name="userid" id="userid"/><text id="blue">Check Availability</text></td>                    
+                </tr>
+                <tr>                    
+                    <td>Password<sup>*</sup></td>
+                    <td>Between 3 to 10 character.Only letter, number and underscore are allowed.<br>
+                        <input type="password" name="pwd" id="pwd"/><br>
+                        Min 8 character & Max 15 character. Password must contain at least one small & one capital alphabet and numeric digit.</td>
+                </tr>
+                <tr>                    
+                    <td>Confirm Password<sup>*</sup></td>
+                    <td><input type="password" name="cpwd" id="cpwd"/></td>                    
+                </tr>
+                <tr>                    
+                    <td><text id="blue">If you forget your password, we will identify you with this information</text></td> 
+                </tr>
+                <tr>                    
+                    <td>Security Question<sup>*</sup></td>
+                    <td><select>                        
+                            <option>----Select your security quation----</option>
+                            <option>What is your pet name?</option>
+                            <option>What was the name of your first school?</option>
+                            <option>Who was your childhood hero?</option>
+                            <option>What is your favorite past-time?</option>                        
+                        </select></td>                    
+                </tr>
+                <tr>                    
+                    <td>Security Answer<sup>*</sup></td>
+                    <td><input type="text" name="securityanwer" id="securityanwer"/></td>                    
+                </tr>
+                <tr>                    
+                    <td>Preferred Language<sup>*</sup></td>
+                    <td><select>                       
+                            <option value="English">English</option>
+                            <option value="Hindi">Hindi</option>                        
+                        </select></td>                    
+                </tr>
+            </table>
+            <br>
+            <div class="sub_div"><label>Personal Details</label></div>
+            <br>
+            <table>
+                <tr>                    
+                    <td>First Name<sup>*</sup></td>
+                    <td><input type="text" name="firstname" id="firstname"/></td>                    
+                </tr>
+                <tr>                    
+                    <td>Middle Name</td>
+                    <td><input type="text" name="middlename" id="middlename"/>(Optional)</td>                    
+                </tr>
+                <tr>                    
+                    <td>Last Name<sup>*</sup></td>
+                    <td><input type="text" name="lastname" id="lastname"/></td>                    
+                </tr>
+                <tr>                    
+                    <td>Gender<sup>*</sup></td>
+                    <td><input type="radio" name="gender" id="gender" value="Male">Male<input type="radio" name="gender" id="gender" value="Female">Female</td>                    
+                </tr>
+                <tr>                    
+                    <td>Marital Status<sup>*</sup></td>
+                    <td><input type="radio" name="mstatus" id="mstatus" value="Married">Married<input type="radio" name="mstatus" id="mstatus" value="Unmarried">Unmarried</td>                    
+                </tr>
+                <tr>                    
+                    <td>Date Of Birth<sup>*</sup></td>
+                    <td><input type="date" name="dob" id="dob"/></td>                    
+                </tr>
+                <tr>                    
+                    <td>Occupation<sup>*</sup></td>
+                    <td><select>                        
+                            <option>----Select Occupation----</option>
+                            <option>Governament</option>
+                            <option>Private</option>
+                            <option>Public</option>
+                            <option>Profissional</option>
+                            <option>SelfEmployed</option>
+                            <option>Student</option>
+                            <option>Other</option>                       
+                        </select></td>                    
+                </tr>            
+                <tr>                    
+                    <td>Aadhaar Card No</td>
+                    <td><input type="number" name="aadhaarno" id="aadhaarno"/>(Optional)</td>                    
+                </tr>
+                <tr>                    
+                    <td>PAN Card</td>
+                    <td><input type="text" name="panno" id="panno"/>(Optional)</td>                    
+                </tr>
+                <tr>                    
+                    <td>Email<sup>*</sup></td>
+                    <td><input type="email" name="email" id="email"/></td>                    
+                </tr>
+                <tr>                    
+                    <td>Mobile<sup>*</sup></td>
+                    <td>+91<input type="tel" name="mobile" id="mobile"/></td>                    
+                </tr>
+                <tr>                    
+                    <td>Nationality<sup>*</sup></td>
+                    <td><input type="text" name="nationality" id="nationality"/></td>                    
+                </tr>
+                <tr>                    
+                    <td>Date Of Birth<sup>*</sup></td>
+                    <td><input type="date" name="dob" id="dob"/></td>                    
+                </tr>            
+            </table>
+            <br>
+            <div class="sub_div"><label>Residential Address</label></div>
+            <br>
+            <table>
+                <tr>                    
+                    <td>Flat/Door/Block No.<sup>*</sup></td>
+                    <td><input type="text" name="flat" id="flat"/></td>                    
+                </tr>
+                <tr>                    
+                    <td>Street/Lane</td>
+                    <td><input type="text" name="street" id="street"/>(Optional)</td>                    
+                </tr>
+                <tr>                    
+                    <td>Area/Locality</td>
+                    <td><input type="text" name="area" id="area"/>(Optional)</td>                    
+                </tr>
+                <tr>                    
+                    <td>Country<sup>*</sup></td>
+                    <td><select>
+                            <option>----Select country----</option>
+                            <option>India</option>
+                            <option>USA</option>
+                            <option>China</option>
+                            <option>Englond</option>
+                            <option>Bangladesh</option>
+                            <option>Sri Lanka</option>
+                            <option>West Indies</option>
+                            <option>Iron</option>
+                            <option>Australia</option>
+                        </select></td>                    
+                </tr>
+                <tr>                    
+                    <td>pin code<sup>*</sup></td>
+                    <td><input type="number" name="pincode" id="pincode"/></td>                    
+                </tr>
+                <tr>                    
+                    <td>state<sup>*</sup></td>
+                    <td><input type="text" name="state" id="state"/></td>                    
+                </tr>
+                <tr>                    
+                    <td>City/Town<sup>*</sup></td>
+                    <td><select>
+                            <option>----Select city----</option>
+                        </select></td>                    
+                </tr>
+                <tr>                    
+                    <td>Post Office<sup>*</sup></td>
+                    <td><select>
+                            <option>----Select a post office----</option>
+                        </select></td>                    
+                </tr>
+                <tr>                    
+                    <td>phone<sup>*</sup></td>
+                    <td><input type="tel" name="phone" id="phone"/></td>                    
+                </tr>
+                <tr>                    
+                    <td><text id="blue">Copy Residence to office Address</text></td>
+                    <td><input type="radio" name="officeadd" id="officeadd" value="Yes">Yes<input type="radio" name="officeadd" id="officeadd" value="No">No</td>                    
+                </tr>
+            </table>
+            <br>
+            <div class="sub_div"><label>Subscription to IRCTC New letters/ Promotions/IRCTC SBI Card through email/ SMS</label></div>
+            <br>
+            <table>
+                <tr>                    
+                    <td><text id="blue">IRCTC Newsletters</text></td>                    
+                    <td id="rightside"><input type="radio" name="newsletters" id="newsletters" value="Yes">Yes<input type="radio" name="newsletters" id="newsletters" value="No">No</td>                    
+                </tr>
+                <tr>                    
+                    <td><text id="blue">Commercial Promotions</text></td>                    
+                    <td><input type="radio" name="promotions" id="promotions" value="Yes">Yes<input type="radio" name="promotions" id="promotions" value="No">No</td>                    
+                </tr>
+                <tr>                    
+                    <td><text id="blue">Please inform me about IRCTC SBI Card through phone</text></td>                    
+                    <td><input type="radio" name="sbicard" id="sbicard" value="Yes">Yes<input type="radio" name="sbicard" id="sbicard" value="No">No</td>                    
+                </tr>
+            </table>            
+            <br><center>
+            <input type="button" value=" Submit Registration Form>>>" class="sub_div"></center>
+            <br> 
+        </div>
+        </form>
+    </body>
+</html>
